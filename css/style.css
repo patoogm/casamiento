@@ -35,3 +35,17 @@ section.portada .box-nombres-fecha-portada h1 span {
   font-weight: 300;
   margin-top: 1rem;
 }
+
+section.cuenta-regresiva .box-aros {
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  position: absolute;
+  z-index: 99;
+  top: -200px
+}
+section.portada .content-portada span.fecha {
+  font-size: 25px;
+  margin-bottom: 20px;
+  padding-top: 3rem;
+}
