@@ -1,0 +1,37 @@
+section.fiesta {
+  padding-top: 10%;
+  position: relative;
+  padding-bottom: 17%;
+}
+
+section.ceremonia-fiesta {
+  padding-bottom: 0%;
+  position: relative;
+}
+
+section.ceremonia-fiesta:after {
+  background-image: none;
+  position: absolute;
+  content: '';
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+}
+
+section.portada .box-nombres-fecha-portada h1 span {
+  font-family: var(--fuente-2);
+  font-weight: var(--weight-font-regular);
+  background-color: var(--color-2);
+  color: var(--color-4);
+  display: inline-block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 1rem;
+}
