@@ -55,4 +55,27 @@ section.ceremonia-fiesta .anim-fiesta {
     position: relative;
     padding-bottom: 10%;
   }
+  section.instagram:before {
+    background-image: url(https://fixdate.io/modelo-invitacion/65/img/lineas02.svg);
+    position: absolute;
+    content: '';
+    /* background-size: contain !important; */
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100%;
+    width: 100%;
+    top: -1px;
+}
+  section.instagram:after {
+    background-image: url(https://fixdate.io/modelo-invitacion/30/img/img_ondas06.svg);
+    position: absolute;
+    content: '';
+    /* background-size: contain !important; */
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100%;
+    width: 100%;
+    bottom: -2px;
+    z-index: 99;
+}
 }
