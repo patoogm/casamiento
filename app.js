@@ -1,3 +1,5 @@
+// const qrcode = new QRCode('qrcode')
+
 async function getInvited() {
   const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
@@ -37,5 +39,23 @@ async function sendForm() {
   })
 
   const json = await sendData.json()
-  console.log(json)
+  return json
 }
+
+const getQR = () => {
+  const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  });
+
+  let id = params.id;
+  new QRCode(document.getElementById("qrcode"), {
+    text: `ornate-croquembouche-9ff131.netlify.app/confimation/${id}`,
+    width: 128,
+    height: 128,
+    colorDark : "#000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+  });
+}
+
+getQR()
