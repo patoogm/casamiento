@@ -19,6 +19,7 @@ getInvited()
 async function sendForm() {
   const email = document.getElementById('emailAsistente').value
   const comment = document.getElementById('comentariosAsistente').value
+  const isConfirmed = document.getElementById('1').checked
 
   const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
@@ -29,7 +30,7 @@ async function sendForm() {
   const sendData = await fetch(`http://localhost:8000/invited/${id}`, {
     method: 'PATCH',
     body: JSON.stringify({
-      isConfirmed: true,
+      isConfirmed: isConfirmed || false,
       email,
       comment
     }),
