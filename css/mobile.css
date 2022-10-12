@@ -5,6 +5,30 @@ section.ceremonia-fiesta .anim-fiesta {
 }
 
 @media only screen and (max-width: 767px) {
+  section.portada .content-portada h1 {
+    color: var(--color-1);
+    font-family: var(--fuente-1);
+    font-weight: var(--weight-font-regular);
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    line-height: 110px;
+    margin-bottom: 0;
+  }
+  section.portada .box-nombres-fecha-portada h1 span {
+    font-family: var(--fuente-2);
+    font-weight: var(--weight-font-regular);
+    background-color: var(--color-2);
+    color: var(--color-4);
+    display: inline-block;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 1rem;
+  }
   section.cuenta-regresiva .box-aros {
     width: 100%;
     height: 400px;
@@ -77,5 +101,13 @@ section.ceremonia-fiesta .anim-fiesta {
     width: 100%;
     bottom: -2px;
     z-index: 99;
+}
+section.footer h4 {
+  font-family: var(--fuente-1);
+  font-weight: var(--weight-font-regular);
+  color: var(--color-1);
+  width: 100%;
+  text-align: center;
+  font-size: 65px;
 }
 }
