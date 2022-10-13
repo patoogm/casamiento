@@ -38,6 +38,14 @@ section.ceremonia-fiesta {
   position: relative;
 }
 
+.modal-card .modal-content {
+  cursor: default;
+}
+
+.subtitle {
+  padding-top: 1rem;
+}
+
 section.ceremonia-fiesta:after {
   background-image: none;
   position: absolute;
